@@ -2,7 +2,7 @@
 
 Welcome to Blogopia! This is a simple blog application built with Express.js and EJS templating, designed to allow users to create, view, edit, and delete blog posts.
 
-Features
+Features:
 
 Home Page: Displays a list of all blog post titles.
 
@@ -18,7 +18,7 @@ FAQs: Provides a page with frequently asked questions about the application.
 
 About: Displays information about the developer.
 
-Limitations
+Limitations:
 
 Single User: The application does not support multiple users or authentication.
 
@@ -28,19 +28,20 @@ No Pagination: All posts are displayed on the home page without pagination.
 
 Limited Error Handling: Basic error handling is implemented; edge cases and detailed error messages are minimal.
 
-Prerequisites
+Prerequisites:
 
 Ensure you have the following installed on your machine:
 Node.js (v14 or higher)
 npm (Node package manager, comes with Node.js)
 
-Installation
+Installation:
+
 1. Clone the Repository
 2. npm install
 3. node index.js
 By default, the application will be available at http://localhost:3000.
 
-Usage
+Usage:
 
 Home Page: Access the home page to view a list of all blog post titles.
 
@@ -56,7 +57,7 @@ FAQs: Access the FAQs page at /FAQ.
 
 About: Learn more about the developer at /about.
 
-File Structure
+File Structure:
 
 index.js: Main server file.
 
