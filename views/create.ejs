@@ -1,0 +1,37 @@
+<%- include("partials/header.ejs") %>
+
+
+<div class="create-page">
+    <h1 class="py-3">Let the content flow</h1>
+    <div class="form-area ">
+        <% if(locals.post){ %>
+            <form action="/update" method="POST">
+                <p>Edit your title here: </p>
+                <input type="text" name="title" value="<%= post.title %>">
+                <input type="text" name="originalTitle" value="<%= post.title %>" hidden>
+
+                <p>Edit your content here: </p>
+                <textarea class="text-box" name="content" cols = "100" rows="20"><%= post.content %></textarea>
+            
+                <input type="submit" value="Update">
+            </form>
+        <% }else{ %>
+            <form action="/post" method="POST">
+                <input type="text" name="title" placeholder="Enter the title of the blog">
+                
+                <p class="pt-3">Enter your content here: </p>
+                <textarea class="text-box" name="content" placeholder="Enter the text here" cols = "100" rows="20"  > </textarea>
+            
+                <div><input type="submit" value="Post"></div>
+                
+            </form>
+        <% } %> 
+    </div>
+</div>
+
+
+
+
+<%- include("partials/footer.ejs") %>
+
+

@@ -1,0 +1,21 @@
+<%- include("partials/header.ejs") %>
+
+    <div class="home-content">
+
+        <h1>Welcome to Blogopia</h1>
+
+        <% if(locals.titles) { %> 
+            <ol type="1">
+                <% titles.forEach((title) => { %>
+                    <li class="py-1">
+                        <form action="/viewPost" method="POST">
+                            <input name="blogTitle" type="submit" value="<%= title %>"> 
+                        </form>   
+                    </li>
+                <% }) %>
+            </ol>
+        <% } %>
+    </div> 
+    
+<%- include("partials/footer.ejs") %>
+    
