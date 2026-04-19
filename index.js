@@ -9,11 +9,11 @@ const app = express();
 const port = 3000;
 
 const db = new pg.Client({
-  user: process.env.DBUSER,
+  user: process.env.DB_USER,
   host: process.env.DBHOST,
   database: process.env.DATABASE,
-  password: process.env.PASSWORD,
-  port: process.env.PORT,
+  password: process.env.DB_PASSWORD,
+  port: process.env.DB_PORT,
 });
 db.connect();
 
